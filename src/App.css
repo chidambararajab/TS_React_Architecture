@@ -44,7 +44,7 @@
 /* Layout helpers */
 .nav {
   padding: 12px 16px;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .nav a {
   margin-right: 12px;
@@ -55,4 +55,66 @@
   margin: 16px auto;
   padding: 0 16px;
   width: 100%;
+}
+
+/* Notes UI */
+.note-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.note-card .actions button {
+  margin-right: 8px;
+}
+
+/* Alignment helpers */
+.notes-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.note-card h3 {
+  margin: 0 0 6px 0;
+}
+
+.note-card p {
+  margin: 0 0 8px 0;
+}
+
+.note-card .actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: calc(100% - 32px);
+}
+.modal .actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
 }
